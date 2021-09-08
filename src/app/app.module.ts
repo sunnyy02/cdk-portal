@@ -26,7 +26,6 @@ import {PortalModule} from '@angular/cdk/portal';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DemoMaterialModule,
     FormsModule,
     PortalModule
   ],

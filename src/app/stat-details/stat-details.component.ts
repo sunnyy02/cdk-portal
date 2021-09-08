@@ -1,21 +1,6 @@
 import { CdkPortal, DomPortalOutlet } from '@angular/cdk/portal';
 import { AfterViewInit, ApplicationRef, Component, ComponentFactoryResolver, Injector, OnDestroy, OnInit, ViewChild } from '@angular/core';
 
-
-@Component({
-  selector: 'app-stat-content',
-  template: `
-      <ng-template>
-      <ng-content></ng-content>
-    </ng-template>
-  `
-})
-export class StatContentComponent {
-
-constructor() {
-}
-}
-
 @Component({
   selector: 'app-stat-details',
   template: `
