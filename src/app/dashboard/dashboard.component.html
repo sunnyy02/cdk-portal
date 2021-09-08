@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h1>DashBoard</h1>
+    </div>
+    <div class="panel-body dropdown theme-dropdown clearfix">
+      <select (change)="onChange($event.target)">
+        <option *ngFor="let x of searchTypes" [value]="x.route">{{x.name}}</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <div class="col-xs-6">
+      <router-outlet></router-outlet>
+    </div>
+    <!-- Stats -->
+    <app-stats></app-stats>
+    <!-- Action -->
+    <app-action></app-action>
+  </div>
+</div>
